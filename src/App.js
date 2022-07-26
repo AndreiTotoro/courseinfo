@@ -20,17 +20,15 @@ const Header = (props) =>(
 <h1>{props.name}</h1>
 )
 
+const Part = (props) => (
+  <p>{props.partName} {props.partExercises}</p>
+)
+
 const Content = (props) => (
   <>
-      <p>
-        {props.part1} {props.exercises1}
-      </p>
-      <p>
-        {props.part2} {props.exercises2}
-      </p>
-      <p>
-        {props.part3} {props.exercises3}
-      </p>
+      <Part partName = {props.part1} partExercises = {props.exercises1} />
+      <Part partName = {props.part2} partExercises = {props.exercises2} />
+      <Part partName = {props.part3} partExercises = {props.exercises3} />
   </>
 )
 
