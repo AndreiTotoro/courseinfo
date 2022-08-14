@@ -1,5 +1,6 @@
 import React from "react";
 import Part from "./Part";
+import Sum from "./Sum"
 
 
 const Course = ({course}) => {
@@ -9,6 +10,7 @@ const Course = ({course}) => {
     <ul>
       {course.parts.map(part => <Part key={part.id} part={part} />)}
     </ul>
+    <Sum parts={course.parts} />
     </div>
   )
 }
